@@ -113,5 +113,4 @@ if ! shopt -oq posix; then
 fi
 
 alias j='bundle exec jekyll serve'
-
-export PATH=$PATH:/usr/local/jdk_11_0_1/bin
+source .terminalpaths

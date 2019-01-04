@@ -87,7 +87,7 @@
     "code-runner.runInTerminal": true,
     "code-runner.saveFileBeforeRun": true,
     "code-runner.showRunCommandInEditorContextMenu": false,
-    "vim.useCtrlKeys": false,
+    // "vim.useCtrlKeys": false,
     "editor.formatOnSave": true,
     "code-runner.saveAllFilesBeforeRun": true,
     "workbench.iconTheme": "vscode-icons",
@@ -96,11 +96,23 @@
     "search.useGlobalIgnoreFiles": true,
     "code-runner.customCommand": "gdb $fileNameWithoutExt",
     "workbench.activityBar.visible": true,
-    "terminal.integrated.shell.linux": "/bin/bash",
     "terminal.integrated.rendererType": "dom",
     "workbench.panel.defaultLocation": "right",
-    "window.titleBarStyle": "custom"
+    "window.titleBarStyle": "custom",
 
-    // "terminal.integrated.shell.linux": "/bin/zsh",
-    // "terminal.integrated.fontFamily": "DejaVu Sans Mono for Powerline"
+    "terminal.integrated.shell.linux": "/bin/zsh",
+    "terminal.integrated.fontFamily": "DejaVu Sans Mono for Powerline",
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "prettier.printWidth": 120,
+    "markdownlint.config": {
+        "MD013": false,
+        "MD033": {
+            "allowed_elements": ["kbd"]
+        }
+    },
+    "files.watcherExclude": {
+        "**/developer_docs/**": true
+    },
+    "python.pythonPath": "/usr/bin/python3"
 }

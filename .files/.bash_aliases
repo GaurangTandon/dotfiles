@@ -2,6 +2,7 @@ alias ll='ls -alF'
 alias c='clear'
 alias la='ls -A'
 alias l='ls -CF'
+alias mv='mv -i' # prevent accidental overwrites!
 # the touch is supposed to create an empty file if it doesn't exist
 # and just change its access timestamp if it does exist
 runC(){

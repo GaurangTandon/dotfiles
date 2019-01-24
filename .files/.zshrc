@@ -19,6 +19,9 @@ if [[ -f ~/mcfly.bash ]]; then
   source ~/mcfly.bash
 fi
 
+# https://stackoverflow.com/a/46864032/2675672
+set -o noclobber
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -77,7 +80,6 @@ plugins=(
 	git 
 	dircycle 
 	fasd
-	vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -115,7 +117,18 @@ function mkcd(){
     mkdir "$1" && cd "$1"
 }
 
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# adapted from https://github.com/mokagio/dotfiles/blob/ea34a74ba820f9617f70d5d33769f5979d49a3f3/zshprompt
+function check_last_exit_code() {
+  local LAST_EXIT_CODE=$?
+  if [[ $LAST_EXIT_CODE -ne 0 ]]; then
+    local EXIT_CODE_PROMPT=' '
+    EXIT_CODE_PROMPT+="%{$fg_bold[red]$bg_[white]%}$LAST_EXIT_CODE%{$reset_color%} "
+    echo "$EXIT_CODE_PROMPT"
+  fi
+}
+
+PROMPT='$(check_last_exit_code)%F'$PROMPT

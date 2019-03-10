@@ -132,3 +132,5 @@ function check_last_exit_code() {
 }
 
 PROMPT='$(check_last_exit_code)%F'$PROMPT
+eval "$(fasd --init auto)"
+export BROWSER=/usr/bin/google-chrome # for jupyter

@@ -1,5 +1,5 @@
 {
-    "window.zoomLevel": -1,
+    "window.zoomLevel": 0,
     "prettier.tabWidth": 4,
     "prettier.eslintIntegration": true,
     "eslint.run": "onSave",
@@ -114,5 +114,28 @@
     "files.watcherExclude": {
         "**/developer_docs/**": true
     },
-    "python.pythonPath": "/usr/bin/python3"
+    "python.pythonPath": "/usr/bin/python3",
+    "trailing-spaces.highlightCurrentLine": false,
+    "trailing-spaces.trimOnSave": true,
+    "keyboard.dispatch": "keyCode",
+    "shellcheck.exclude": [
+        1017
+    ],
+    "zenMode.hideLineNumbers": false,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "window.menuBarVisibility": "default",
+    "breadcrumbs.enabled": false,
+    "files.associations": {
+        "*.js": "javascript"
+    },
+    "python.jediEnabled": false,
+    "terminal.integrated.fontSize": 13,
+    "python.autoComplete.addBrackets": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }

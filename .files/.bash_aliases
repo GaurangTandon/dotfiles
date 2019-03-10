@@ -11,3 +11,6 @@ runC(){
 run(){
     g++ -g -Wall -Wextra -o $1 $2 && touch -a $3 && ./$1 < $3
 }
+# alias c='f -e code' # quick opening files with vim
+# alias m='f -e mplayer' # quick opening files with mplayer
+alias o='a -e xdg-open' # quick opening files with xdg-open

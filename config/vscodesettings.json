@@ -10,7 +10,6 @@
     "git.autofetch": true,
     "eslint.validate": ["javascript", "javascriptreact"],
     "explorer.confirmDelete": false,
-    "html.format.enable": false,
     "editor.minimap.enabled": false,
     "workbench.enableExperiments": false,
     "prettier.disableLanguages": ["vue", "yml", "yaml"],
@@ -86,11 +85,9 @@
     "code-runner.ignoreSelection": true,
     "code-runner.runInTerminal": true,
     "code-runner.saveFileBeforeRun": true,
-    "code-runner.showRunCommandInEditorContextMenu": false,
-    // "vim.useCtrlKeys": false,
-    "editor.formatOnSave": true,
+    "code-runner.showRunCommandInEditorContextMenu": true,
     "code-runner.saveAllFilesBeforeRun": true,
-    "workbench.iconTheme": "vscode-icons",
+    "code-runner.enableAppInsights": false,
     "search.usePCRE2": true,
     "search.showLineNumbers": true,
     "search.useGlobalIgnoreFiles": true,
@@ -118,9 +115,7 @@
     "trailing-spaces.highlightCurrentLine": false,
     "trailing-spaces.trimOnSave": true,
     "keyboard.dispatch": "keyCode",
-    "shellcheck.exclude": [
-        1017
-    ],
+    "shellcheck.exclude": [1017],
     "zenMode.hideLineNumbers": false,
     "files.exclude": {
         "**/.classpath": true,
@@ -128,7 +123,7 @@
         "**/.settings": true,
         "**/.factorypath": true
     },
-    "window.menuBarVisibility": "default",
+    "window.menuBarVisibility": "toggle",
     "breadcrumbs.enabled": false,
     "files.associations": {
         "*.js": "javascript"
@@ -137,5 +132,19 @@
     "terminal.integrated.fontSize": 13,
     "python.autoComplete.addBrackets": true,
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.formatOnSave": true,
+    "php.validate.executablePath": "/usr/bin/php",
+    "php.executablePath": "/usr/bin/php",
+    "workbench.colorTheme": "Darkside Contrast (rainglow)",
+    "workbench.statusBar.visible": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#000088"
+    },
+    "C_Cpp.intelliSenseCacheSize": 10,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "html.format.enable": false,
+    "sync.gist": "9ce64bb47e3e1d2836d817206bc942b6"
 }

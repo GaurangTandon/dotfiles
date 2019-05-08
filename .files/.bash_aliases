@@ -1,3 +1,4 @@
+#!/bin/sh
 alias ll='ls -alF'
 alias c='clear'
 alias la='ls -A'
@@ -14,3 +15,6 @@ run(){
 # alias c='f -e code' # quick opening files with vim
 # alias m='f -e mplayer' # quick opening files with mplayer
 alias o='a -e xdg-open' # quick opening files with xdg-open
+alias sai="sudo apt install"
+alias sau="sudo apt update -y"
+alias saud="sudo apt upgrade -y"

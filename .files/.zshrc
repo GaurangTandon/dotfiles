@@ -84,7 +84,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 source ~/.bash_aliases
-source ~/.terminalpaths
+# source ~/.terminalpaths
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -132,5 +132,6 @@ function check_last_exit_code() {
 }
 
 PROMPT='$(check_last_exit_code)%F'$PROMPT
-eval "$(fasd --init auto)"
+# eval "$(fasd --init auto)"
 export BROWSER=/usr/bin/google-chrome # for jupyter
+export PATH=$PATH:$HOME/anaconda3/bin

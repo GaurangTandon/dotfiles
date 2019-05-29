@@ -3,7 +3,11 @@ alias ll='ls -alF'
 alias c='clear'
 alias la='ls -A'
 alias l='ls -CF'
+alias cft='cf test'
+alias cfs='cf submit'
 alias mv='mv -i' # prevent accidental overwrites!
+alias py3='python3.7'
+alias pip3='python3.7 -m pip'
 # the touch is supposed to create an empty file if it doesn't exist
 # and just change its access timestamp if it does exist
 runC(){

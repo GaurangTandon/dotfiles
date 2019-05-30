@@ -12,7 +12,7 @@ HISTFILESIZE=2000
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="spaceship"
+ZSH_THEME="agnoster"
 
 # effective ctrl-r search https://github.com/cantino/mcfly
 if [[ -f ~/mcfly.bash ]]; then
@@ -39,7 +39,7 @@ CASE_SENSITIVE="true"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -75,11 +75,12 @@ CASE_SENSITIVE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	zsh-syntax-highlighting 
-	zsh-autosuggestions 
-	git 
-	dircycle 
+	zsh-syntax-highlighting
+	zsh-autosuggestions
+	git
+	dircycle
 	fasd
+  virtualenv
 )
 
 source $ZSH/oh-my-zsh.sh

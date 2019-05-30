@@ -4,3 +4,4 @@ This is a list of productivity programs that I use in my terminal, and would wan
 2. fzf: https://github.com/junegunn/fzf
 3. uget download manager
 4. SafeEyes for taking breaks from the pc
+5. Multigit status https://github.com/fboender/multi-git-status

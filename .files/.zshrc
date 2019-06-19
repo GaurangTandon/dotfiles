@@ -154,3 +154,4 @@ unset __conda_setup
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH=$PATH:~/otherrepos/multi-git-status/
+export NODE_PATH=`which node`

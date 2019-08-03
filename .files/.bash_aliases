@@ -6,6 +6,7 @@ alias c='clear'
 alias la='ls -A'
 alias l='ls -CF'
 alias mv='mv -i' # prevent accidental overwrites!
+alias gww='g++ -Wall -Wextra' # prevent accidental overwrites!
 
 # apt related
 alias sai="sudo apt install"

@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$PATH:/usr/local/jdk_11_0_1/bin:$HOME/bin
+export PATH=$PATH:~/jdk-11.0.4+11/bin:$HOME/bin
 # Path to your oh-my-zsh installation.
 export ZSH="/home/gt/.oh-my-zsh"
 
@@ -80,7 +80,7 @@ plugins=(
 	git
 	dircycle
 	fasd
-  virtualenv
+    virtualenv
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -133,7 +133,7 @@ function check_last_exit_code() {
 }
 
 PROMPT='$(check_last_exit_code)%F'$PROMPT
-# eval "$(fasd --init auto)"
+eval "$(fasd --init auto)"
 export BROWSER=/usr/bin/google-chrome # for jupyter
 
 # >>> conda initialize >>>

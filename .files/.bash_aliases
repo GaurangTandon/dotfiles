@@ -24,6 +24,7 @@ alias gww='g++ -Wall -Weffc++ -pedantic  \
 -Wstrict-aliasing=2 -Wswitch-default \
 -Wswitch-enum \
 -Wunreachable-code -Wunused \
+-Wunused-but-set-variable \
 -Wunused-parameter \
 -Wvariadic-macros \
 -Wwrite-strings'

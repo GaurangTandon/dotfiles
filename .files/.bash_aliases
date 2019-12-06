@@ -39,16 +39,6 @@ alias saud="sudo apt upgrade -y"
 alias py3='python3.7'
 alias pip3='python3.7 -m pip'
 
-# faster code compilation and running
-# the touch is supposed to create an empty file if it doesn't exist
-# and just change its access timestamp if it does exist
-runC(){
-    gcc -g -Wall -Wextra -o $1 $2 -lm && touch -a $3 && ./$1 < $3
-}
-run(){
-    g++ -g -Wall -Wextra -o $1 $2 && ./$1
-}
-
 # takes a single string argument
 timeit(){
     start=$(date +%s.%N)
@@ -64,4 +54,7 @@ alias cfs='cf submit'
 cfp(){
     cd ~/Codeforces && cf parse $1 $2 && cd "$1/$2" 
 }
+
+# daily driver
 alias o="xdg-open"
+alias ...="../.."

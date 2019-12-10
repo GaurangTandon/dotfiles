@@ -18,7 +18,7 @@ alias gww='g++ -Wall -Weffc++ -pedantic  \
 -Winvalid-pch   \
 -Wmissing-field-initializers -Wmissing-format-attribute   \
 -Wmissing-include-dirs -Wmissing-noreturn \
--Wpacked  -Wpadded -Wpointer-arith \
+-Wpacked  -Wpointer-arith \
 -Wredundant-decls \
 -Wshadow -Wstack-protector \
 -Wstrict-aliasing=2 -Wswitch-default \
@@ -27,7 +27,8 @@ alias gww='g++ -Wall -Weffc++ -pedantic  \
 -Wunused-but-set-variable \
 -Wunused-parameter \
 -Wvariadic-macros \
--Wwrite-strings'
+-Wwrite-strings \
+-fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG'
 alias gdb="gdb -q"
 
 # apt related

@@ -27,9 +27,9 @@ alias gww='g++ -Wall -Weffc++ -pedantic  \
 -Wunused-but-set-variable \
 -Wunused-parameter \
 -Wvariadic-macros \
--Wwrite-strings \
--fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG'
+-Wwrite-strings'
 alias gdb="gdb -q"
+alias gmm="gww -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG"
 
 # apt related
 alias sai="sudo apt install"
@@ -54,6 +54,9 @@ alias cft='cf test'
 alias cfs='cf submit'
 cfp(){
     cd ~/Codeforces && cf parse $1 $2 && cd "$1/$2" 
+}
+cfg(){
+    cd ~/Codeforces && mkdir -p "$1/$2" && cd "$1/$2" && cf gen  
 }
 
 # daily driver

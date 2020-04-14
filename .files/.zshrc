@@ -163,6 +163,9 @@ setopt clobber
 export PATH=$PATH:/home/gt/otherrepos/spotifyc
 export PATH=$PATH:~/Flutter/flutter/bin
 export PATH=$PATH:/usr/lib/dart/bin
+# for oj-tools
+export PATH=$PATH:/home/gt/geckodriver
+export PATH=$PATH:/home/gt/nvim
 
 # part of growing up :)
 alias vim="nvim"

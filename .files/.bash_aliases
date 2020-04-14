@@ -62,3 +62,29 @@ cfg(){
 # daily driver
 alias o="xdg-open"
 alias ...="../.."
+alias :q="exit"
+alias cbcp='xclip -selection clipboard'
+
+# Online judge tools related aliases
+alias ojt='gmm *.cpp; oj test'
+alias ojs='oj submit -w 0 -y *.cpp'
+ojp(){
+    cd ~/AtCoder && mkdir -p "$1/$2/$3" && cd "$1/$2/$3" && cf gen
+}
+generate(){
+    i=1
+    c="a"
+    lim=$(($1))
+
+    while (( $i <= $lim )) do
+        echo $c
+
+        mkdir $c
+        cd $c
+        cf gen
+        cd ..
+
+        c="$(echo $c | tr '[a-y]z' '[b-z]a')"
+        i=$(($i + 1))
+    done
+}

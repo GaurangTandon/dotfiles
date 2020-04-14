@@ -51,5 +51,9 @@ inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
+" insert a line below while keeping cursor in place
+nnoremap zj o<Esc>k
+nnoremap zk O<Esc>j
+
 " syntax highligh, should be enabled by default right??
 syntax on

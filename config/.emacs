@@ -55,4 +55,6 @@
 (setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
 (setq scroll-step 1) ;; keyboard scroll one line at a time
 
-
+;; allows me to downscale images
+;; https://emacs.stackexchange.com/questions/26363
+(setq org-image-actual-width nil)

@@ -50,6 +50,11 @@ if has("autocmd")
         au!
         autocmd FileType cpp setlocal commentstring=//\ %s
     augroup END
+
+    augroup cppcompilation
+        au!
+        autocmd FileType cpp setlocal makeprg=gmm\ %
+    augroup END
 endif
 
 nnoremap  :Commentary<cr>

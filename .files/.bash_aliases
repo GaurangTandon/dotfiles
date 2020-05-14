@@ -9,29 +9,7 @@ alias mv='mv -i' # prevent accidental overwrites!
 alias mx='chmod +x'
 
 # safe compilation flags
-alias gww='g++ -Wall -Weffc++ -pedantic  \
--pedantic-errors -Wextra -Wcast-align \
--Wcast-qual -Wconversion \
--Wdisabled-optimization \
--Wfloat-equal -Wformat=2 \
--Wformat-nonliteral -Wformat-security  \
--Wformat-y2k \
--Wimport  -Winit-self  -Winline \
--Winvalid-pch   \
--Wmissing-field-initializers -Wmissing-format-attribute   \
--Wmissing-include-dirs -Wmissing-noreturn \
--Wpacked  -Wpointer-arith \
--Wredundant-decls \
--Wshadow -Wstack-protector \
--Wstrict-aliasing=2 -Wswitch-default \
--Wswitch-enum \
--Wunreachable-code -Wunused \
--Wunused-but-set-variable \
--Wunused-parameter \
--Wvariadic-macros \
--Wwrite-strings'
 alias gdb="gdb -q"
-alias gmm="gww -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG"
 
 # apt related
 alias sai="sudo apt install"

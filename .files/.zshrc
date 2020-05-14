@@ -1,5 +1,4 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$PATH:~/jdk-11.0.4+11/bin:$HOME/bin
 # Path to your oh-my-zsh installation.
 export ZSH="/home/gt/.oh-my-zsh"
@@ -160,7 +159,6 @@ export NODE_PATH=`which node`
 
 source /home/gt/.config/broot/launcher/bash/br
 setopt clobber
-export PATH=$PATH:/home/gt/otherrepos/spotifyc
 export PATH=$PATH:~/Flutter/flutter/bin
 export PATH=$PATH:/usr/lib/dart/bin
 # for oj-tools

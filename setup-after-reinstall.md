@@ -1,7 +1,11 @@
   Order in which programs should be installed on a clean Ubuntu machine
   
-  1. `sudo apt install git curl xclip python3-tk` (xclip for clipboard access in neovim, etc.. python3-tk for showing matplotlib figures)
-  2. Follow instructions to clone vim and build it. [link](https://www.vim.org/git.php). `./configure --with-features=huge && make && sudo make install` (otherwise it misses crucial features like clipboard etc.)
+  1. `sudo apt install git curl xclip python3-tk uget` (xclip for clipboard access in neovim, etc.. python3-tk for showing matplotlib figures, ugetdm it's easier to get from apt then build from source)
+      - also run: `sudo apt install libncurses5-dev libgtk2.0-dev libatk1.0-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev python3-dev ruby-dev` required for compiling full feature vim
+  2. Follow instructions to clone vim and build it. [link](https://www.vim.org/git.php). 
+      - need to follow specific compilation process otherwise vim lacks crucial features
+      - try follow this "https://github.com/ycm-core/YouCompleteMe/wiki/Building-Vim-from-source" but it didn't really work for me well. Also see: https://stackoverflow.com/questions/11416069, https://superuser.com/questions/623040
+      - lastly run `sudo make && sudo make install`
   3. Install [Neovim latest release](https://github.com/neovim/neovim/releases/latest) via appimage
   4. `python3 -m pip install --user --upgrade pynvim neovim-remote` ([remote](https://github.com/mhinz/neovim-remote) - useful for latex setup)
   5. Zsh:

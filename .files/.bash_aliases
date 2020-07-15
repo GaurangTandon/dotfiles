@@ -15,6 +15,7 @@ alias gdb="gdb -q"
 alias sai="sudo apt install"
 alias sau="sudo apt update -y"
 alias saud="sudo apt upgrade -y"
+alias v="\vim -u /home/gt/.cp_vimrc"
 
 # saving myself from everyday boredom of accidentally running non-py3.7
 alias py3='python3.7'
@@ -31,7 +32,9 @@ timeit(){
 
 # xalanq/cf-tool
 alias cft='cf test'
-alias cfs='cf submit'
+cfr() {
+    cf race $1 && cd $1/a
+}
 cfp(){
     cd ~/Codeforces && cf parse $1 $2 && cd "$1/$2" 
 }

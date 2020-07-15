@@ -49,6 +49,7 @@ export NODE_PATH=`which node`
 
 setopt clobber
 export PATH=$PATH:/home/gt/flutter/bin
+export EDITOR="nvim"
 
 # part of growing up :)
 alias vim="nvim"

@@ -15,11 +15,11 @@ alias gdb="gdb -q"
 alias sai="sudo apt install"
 alias sau="sudo apt update -y"
 alias saud="sudo apt upgrade -y"
-alias v="\vim -u /home/gt/.cp_vimrc"
+alias v="vim -u /home/gt/.cp_vimrc"
 
 # saving myself from everyday boredom of accidentally running non-py3.7
-alias py3='python3.7'
-alias pip3='python3.7 -m pip'
+alias py3='python3.8'
+alias pip3='python3.8 -m pip'
 
 # takes a single string argument
 timeit(){
@@ -36,10 +36,10 @@ cfr() {
     cf race $1 && cd $1/a
 }
 cfp(){
-    cd ~/Codeforces && cf parse $1 $2 && cd "$1/$2" 
+    cd ~/codeforces && cf parse $1 $2 && cd "$1/$2" 
 }
 cfg(){
-    cd ~/Codeforces && mkdir -p "$1/$2" && cd "$1/$2" && cf gen  
+    cd ~/codeforces && mkdir -p "$1/$2" && cd "$1/$2" && cf gen  
 }
 
 # daily driver

@@ -28,3 +28,4 @@
       5. Run `git config --global user.signingkey <KEY>` to add the signing information to commits. I have not added the gpg key to bash, although you can do that (`export GPG_TTY=$(tty)` to .bash_profile, I don't know what this does though)
       6. To sign every commit on the pc, run `git config --global commit.gpgsign true`. To sign just one commit, add the `-S` flag to `git commit`.
       7. That's all!
+  11. Setup Java: `sudo apt install openjdk-8-jdk` - this should install required stuff, check with `java -version` and `javac -version` (respectively) ([tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04) gives `default-jre default-jdk` which is actually correct but fails with this [error](https://stackoverflow.com/questions/55436585/))

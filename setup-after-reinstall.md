@@ -1,6 +1,6 @@
   Order in which programs should be installed on a clean Ubuntu machine
   
-  1. `sudo apt install git curl xclip python3-tk uget` (xclip for clipboard access in neovim, etc.. python3-tk for showing matplotlib figures, ugetdm it's easier to get from apt then build from source)
+  1. `sudo apt install git curl xclip python3-tk uget ncdu` (xclip for clipboard access in neovim, etc.. python3-tk for showing matplotlib figures, ugetdm it's easier to get from apt then build from source)
       - also run: `sudo apt install libncurses5-dev libgtk2.0-dev libatk1.0-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev python3-dev ruby-dev` required for compiling full feature vim
   2. Follow instructions to clone vim and build it. [link](https://www.vim.org/git.php). 
       - need to follow specific compilation process otherwise vim lacks crucial features
@@ -30,3 +30,4 @@
       7. That's all!
   11. Setup Java: `sudo apt install openjdk-8-jdk` - this should install required stuff, check with `java -version` and `javac -version` (respectively) ([tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04) gives `default-jre default-jdk` which is actually correct but fails with this [error](https://stackoverflow.com/questions/55436585/), there is another [possible fix](https://stackoverflow.com/questions/47150410/failed-to-run-sdkmanager-list-with-java-9) but i don't care)
       1. for flutter goto [linux flutter](https://flutter.dev/docs/get-started/install/linux). It should install dart as well alongside
+  12. `sudo snap install vlc`

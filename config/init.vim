@@ -5,10 +5,6 @@ source ~/.vimrc
 " can also use splitbelow to split on bottom
 set splitright " splits to the rightside on using vs
 
-" something related to terminal colors being perfect
-set termguicolors
-colorscheme desert
-
 call plug#begin()
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -16,8 +12,15 @@ Plug 'lervag/vimtex'
 Plug 'tpope/vim-surround'
 Plug 'dense-analysis/ale'
 Plug 'tpope/vim-commentary'
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'thosakwe/vim-flutter'
+Plug 'srcery-colors/srcery-vim'
 
 call plug#end()
+"
+" something related to terminal colors being perfect
+set termguicolors
+colo srcery
 
 " for COC autocomplete stuff
 inoremap <silent><expr> <TAB>

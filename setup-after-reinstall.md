@@ -32,3 +32,7 @@
       1. for flutter goto [linux flutter](https://flutter.dev/docs/get-started/install/linux). It should install dart as well alongside
   12. `sudo snap install vlc` and `sudo apt install ffmpeg`
   13. grab `bat` debian file from its [releases page](https://github.com/sharkdp/bat/releases) and run `sudo dpkg -i <path>.deb`.
+  14.
+    - Enable build-dep in your apt list. Basically, `sudo sed -i -e 's/# deb-src/deb-src/' /etc/apt/sources.list` followed by `sudo apt update`
+    - then do `sudo apt-get build-dep emacs`
+    - `emacs` instructions from its [page](https://www.gnu.org/software/emacs/download.html), basically clone the tarball and run `sudo ./configure && sudo make && sudo make install`

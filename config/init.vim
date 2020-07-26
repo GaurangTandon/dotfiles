@@ -60,5 +60,5 @@ if has("autocmd")
     augroup END
 endif
 
-nnoremap  :Commentary<cr>
-vnoremap  :Commentary<CR>
+nnoremap  :Commentary<CR>j
+vnoremap  :Commentary<CR>j

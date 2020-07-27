@@ -32,7 +32,16 @@
       1. for flutter goto [linux flutter](https://flutter.dev/docs/get-started/install/linux). It should install dart as well alongside
   12. `sudo snap install vlc` and `sudo apt install ffmpeg`
   13. grab `bat` debian file from its [releases page](https://github.com/sharkdp/bat/releases) and run `sudo dpkg -i <path>.deb`.
-  14.
+  14. Emacs via compiling source (did not work on Ubuntu 20.04, tried 23.4, 25.3 and 26.3)
     - Enable build-dep in your apt list. Basically, `sudo sed -i -e 's/# deb-src/deb-src/' /etc/apt/sources.list` followed by `sudo apt update`
     - then do `sudo apt-get build-dep emacs`
     - `emacs` instructions from its [page](https://www.gnu.org/software/emacs/download.html), basically clone the tarball and run `sudo ./configure && sudo make && sudo make install`
+  15. Emacs via `apt`itude - fix for a strange bug from [here](https://askubuntu.com/questions/1237698/emacs-installation-fails-on-ubuntu-20-04) (apt does have emacs 26.3, woo)
+    - `sudo apt purge emacs`
+    - `sudo apt install --reinstall libotf0 libm17n-0`
+    - `sudo apt install emacs`
+    - To install all plugins, M-x and then `package-refresh-contents` followed by `package-install-selected-packages` should do the trick. If any remains, can do manually `M-x` then `package-install<CR>linum-relative` or `package-install<CR>spacemacs-theme`
+  15. Zotero bug: "Failed to load backend for 'application/pdf': libnss3.so: failed to map segment from shared object""
+    - one fix is `sudo apt install libnss3-dev`
+    - another is to reinstall Zotero
+    - the third is just to reopen Zotero, sometimes just opening and closing works

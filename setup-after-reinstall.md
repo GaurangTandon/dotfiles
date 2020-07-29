@@ -15,6 +15,7 @@
       - `git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting`
       - obviously don't forget to copy over previous `.zshrc` file
   6. Install messaging apps like tdesktop discord teams
+  6. `nvm` setup is [here](https://github.com/nvm-sh/nvm#installing-and-updating)
   7. Guake:
       - `apt install guake`
       - correct shortcut for toggle in preferences to Alt-/, and also setup accessing n-th tab using alt-n.

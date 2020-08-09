@@ -31,7 +31,7 @@
       7. That's all!
   11. Setup Java: `sudo apt install openjdk-8-jdk` - this should install required stuff, check with `java -version` and `javac -version` (respectively) ([tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04) gives `default-jre default-jdk` which is actually correct but fails with this [error](https://stackoverflow.com/questions/55436585/), there is another [possible fix](https://stackoverflow.com/questions/47150410/failed-to-run-sdkmanager-list-with-java-9) but i don't care)
       1. for flutter goto [linux flutter](https://flutter.dev/docs/get-started/install/linux). It should install dart as well alongside
-  12. `sudo snap install vlc` and `sudo apt install ffmpeg`
+  12. `sudo apt install ffmpeg vlc vlc-plugin-access-extra libbluray-bdj libdvdcss2` (configure at default settings) (snap for vlc does not work on focal faussa)
   13. grab `bat` debian file from its [releases page](https://github.com/sharkdp/bat/releases) and run `sudo dpkg -i <path>.deb`.
   14. Emacs via compiling source (did not work on Ubuntu 20.04, tried 23.4, 25.3 and 26.3)
     - Enable build-dep in your apt list. Basically, `sudo sed -i -e 's/# deb-src/deb-src/' /etc/apt/sources.list` followed by `sudo apt update`
@@ -46,3 +46,10 @@
     - one fix is `sudo apt install libnss3-dev`
     - another is to reinstall Zotero
     - the third is just to reopen Zotero, sometimes just opening and closing works
+
+
+## Networking stuff
+
+1. `sudo apt install whois nmap`
+2. `tracepath` is the default distribution on Ubuntu instead of `traceroute`.
+3. `sai wireshark net-tools` - wireshark latest (3.2) is available on focal apt universe! :) Also, netstat is used for logging ip tables, etc.

@@ -46,3 +46,7 @@
     - one fix is `sudo apt install libnss3-dev`
     - another is to reinstall Zotero
     - the third is just to reopen Zotero, sometimes just opening and closing works
+
+-------
+
+Follow this guide to setup privacy respecting firefox a step further https://www.privacytools.io/browsers/#about_config

@@ -52,8 +52,9 @@
 Haskell setup Linux
 
 - start with `ghcup` which will install `cabal, ghc, ghcup` for you
-- then follow [this guide](http://marco-lopes.com/articles/Vim-and-Haskell-in-2019/) to add vim support
 - REMEMBER THAT haskell-ide-engine is deprecated, haskell-language-server should be used instead.
+- use this to fix your stack install: [SO answer](https://stackoverflow.com/questions/53385640/how-to-prevent-stack-from-downloading-ghc-for-every-new-project)
+- - then follow [this guide](http://marco-lopes.com/articles/Vim-and-Haskell-in-2019/) to add vim support
 
 -------
 

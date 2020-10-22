@@ -49,4 +49,12 @@
 
 -------
 
+Haskell setup Linux
+
+- start with `ghcup` which will install `cabal, ghc, ghcup` for you
+- then follow [this guide](http://marco-lopes.com/articles/Vim-and-Haskell-in-2019/) to add vim support
+- REMEMBER THAT haskell-ide-engine is deprecated, haskell-language-server should be used instead.
+
+-------
+
 Follow this guide to setup privacy respecting firefox a step further https://www.privacytools.io/browsers/#about_config

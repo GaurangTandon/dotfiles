@@ -56,6 +56,16 @@ Haskell setup Linux
 - use this to fix your stack install: [SO answer](https://stackoverflow.com/questions/53385640/how-to-prevent-stack-from-downloading-ghc-for-every-new-project)
 - - then follow [this guide](http://marco-lopes.com/articles/Vim-and-Haskell-in-2019/) to add vim support
 
+------
+
+## Mon2Cam and V4L2Loopback
+
+1. `sudo apt install v4l2loopback-dkms v4l2loopback-utils`
+2. `sudo modprobe -r v4l2loopback` (exit code: 0 for succesful working)
+3. You may need to install `linux-headers` corresponding to your kernel version to get the first install to work.
+4. After this install Deno and then Mon2Cam easily.
+
+
 -------
 
 Follow this guide to setup privacy respecting firefox a step further https://www.privacytools.io/browsers/#about_config

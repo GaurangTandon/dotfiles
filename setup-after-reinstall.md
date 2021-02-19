@@ -65,6 +65,7 @@ Haskell setup Linux
 3. You may need to install `linux-headers` corresponding to your kernel version to get the first install to work.
 4. After this install Deno and then Mon2Cam easily.
 
+But actually this doesn't work for 1366x768 resolution :( Pehle bolna chahiye tha na ye :/
 
 -------
 

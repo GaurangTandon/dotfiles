@@ -1,4 +1,0 @@
-{
- "diagnostic.checkCurrentLine": true,
-  "coc.preferences.formatOnSaveFiletypes": ["dart" , "rust", "javascript", "c", "cpp", "python"]
-}

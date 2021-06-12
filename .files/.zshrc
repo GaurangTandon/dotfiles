@@ -50,11 +50,12 @@ export PATH="$HOME/.poetry/bin:$PATH"
 export ANDROID_SDK_ROOT=/home/gt/android-studio/bin
 export PATH=$PATH:/home/gt/android-studio/bin
 
-# other tools
+# other tools (do add the download path for each)
 export PATH=$PATH:~/jdk-11.0.4+11/bin
 export PATH=$PATH:/usr/local/texlive/2020/bin/x86_64-linux
 export PATH=$PATH:/home/gt/bin/erlang_ls_repo/_build/default/bin
 export PATH=$PATH:/home/gt/bin/cmake-3.20.0-rc2-linux-x86_64/bin
+export PATH=$PATH:/home/gt/bin/clangd_12.0.0/bin # https://github.com/clangd/clangd/releases
 
 export DENO_INSTALL="/home/gt/.deno"
 export PATH="$PATH:$DENO_INSTALL/bin"

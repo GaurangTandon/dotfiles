@@ -71,3 +71,30 @@ generate(){
         i=$(($i + 1))
     done
 }
+
+
+alias flutterc="flutter run -d chrome --web-hostname localhost --web-port 5000"
+alias dw="~/Downloads"
+
+alias gimp="flatpak run org.gimp.GIMP//stable" # i hate flatpak
+alias ada="ssh -X gaurang.tandon@10.4.24.24"
+
+export WBGETENTITIES="https://www.wikidata.org/w/api.php?format=json&action=wbgetentities"
+
+alias dld1="py3 ~/codeforces/download_prob.py contest -n1"
+alias dld6="py3 ~/codeforces/download_prob.py contest -n6"
+
+exppdf(){
+    convert "$1.pdf" "$1.png"
+    x="$1*"
+    zip "$1.zip" "$x"
+}
+
+ghcl() {
+    prefix=$(echo -n $1 | sed 's|https://github.com/|git@github.com:|')
+    git clone "$prefix.git"
+}
+
+copy() {
+    cat $1 | cbcp
+}

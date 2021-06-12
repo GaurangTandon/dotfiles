@@ -16,6 +16,9 @@ set backspace=indent,eol,start
 " set auto indent and smart indent
 set ai si
 
+" set colorcolumn=80
+set softtabstop=4
+
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
@@ -28,6 +31,9 @@ inoremap <Right> <Nop>
 
 set ignorecase
 set smartcase
+
+" Enable searching as you type, rather than waiting till you press enter.
+set incsearch
 
 set relativenumber
 
@@ -50,3 +56,12 @@ syntax on
 set guicursor=n-v-c-i:block,ci-ve:ver25,r-cr:hor20,o:hor50
                   \,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor
                   \,sm:block-blinkwait175-blinkoff150-blinkon175
+
+" disable vim startup message
+set shortmess+=I
+
+" darkmode
+set bg=dark
+
+" folding code blocks
+set foldmethod=syntax

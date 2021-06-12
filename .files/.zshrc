@@ -15,7 +15,6 @@ plugins=(
 	zsh-autosuggestions
 	git
 	dircycle
-	fasd
     virtualenv
     vi-mode
 )
@@ -48,8 +47,38 @@ PROMPT='$(check_last_exit_code)%F'$PROMPT
 export NODE_PATH=`which node`
 
 setopt clobber
-export PATH=$PATH:/home/gt/flutter/bin
 export EDITOR="nvim"
+export PATH=$PATH:/home/gt/android-studio/bin
+
+export ANDROID_SDK_ROOT=/home/gt/android-studio/bin
+
+export MANPATH=$MANPATH:/usr/local/texlive/2020/texmf-dist/doc/man
+export INFOPATH=$MANPATH:/usr/local/texlive/2020/texmf-dist/doc/info
+export PATH=$PATH:/usr/local/texlive/2020/bin/x86_64-linux
+export PATH=$PATH:/home/gt/android-studio/bin
+export PATH=$PATH:/home/gt/.local/bin
+export PATH=$PATH:/home/gt/.pub-cache/bin
+export PATH=$PATH:/home/gt/drivers
+export PATH=$PATH:/home/gt/bin/erlang_ls_repo/_build/default/bin
+export PATH=$PATH:/home/gt/bin/cmake-3.20.0-rc2-linux-x86_64/bin
+
+export DENO_INSTALL="/home/gt/.deno"
+export PATH="$PATH:$DENO_INSTALL/bin"
 
 # part of growing up :)
 alias vim="nvim"
+
+
+[ -f "/home/gt/.ghcup/env" ] && source "/home/gt/.ghcup/env" # ghcup-env
+
+alias jl="jupyter lab"
+
+add-zsh-hook -Uz chpwd (){ [ -f .env ] && source .env; [ -d venv ] && source venv/bin/activate }
+
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+source /usr/share/doc/fzf/examples/completion.zsh
+
+
+alias mon2cam="deno run --unstable -A -r -q https://raw.githubusercontent.com/ShayBox/Mon2Cam/master/src/mod.ts"
+
+export PATH="$HOME/.poetry/bin:$PATH"

@@ -98,3 +98,11 @@ ghcl() {
 copy() {
     cat $1 | cbcp
 }
+
+mkcd(){
+    mkdir "$1" && cd "$1"
+}
+
+# part of growing up :)
+alias vim="nvim"
+

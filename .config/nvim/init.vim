@@ -77,6 +77,9 @@ source ~/.config/nvim/coc-init.vim
 set laststatus=2
 set statusline^=%m\ %<%f%h
 
+" useful
+nnoremap <leader><space> :noh<cr>
+
 " fzf
 nnoremap <F2> :Buffers<CR>
 nnoremap <leader>l :Files<CR>

@@ -1,0 +1,21 @@
+set nocompatible " without this weird character encoding stuff happens
+
+set ignorecase 
+set smartcase
+set number relativenumber
+syntax on
+filetype plugin indent on
+set expandtab smarttab
+
+set backspace=indent,eol,start
+set tabstop=4 softtabstop=4 shiftwidth=4
+set splitright
+
+" set hlsearch
+" set laststatus=2
+" set autoindent smartindent
+
+nnoremap zj o<Esc>k
+nnoremap zk O<Esc>j
+
+set guicursor=i:block

@@ -1,0 +1,42 @@
+# Aliases for competitive programming
+
+# xalanq/cf-tool
+alias cft='cf test'
+cfr() {
+    cf race $1 && cd $1/a
+}
+cfp(){
+    cd ~/codeforces && cf parse $1 $2 && cd "$1/$2" 
+}
+cfg(){
+    cd ~/codeforces && mkdir -p "$1/$2" && cd "$1/$2" && cf gen  
+}
+
+# Online judge tools related aliases
+# (https://github.com/online-judge-tools/oj)
+alias ojt='gmm *.cpp; oj test'
+alias ojs='oj submit -w 0 -y *.cpp'
+ojp(){
+    cd ~/AtCoder && mkdir -p "$1/$2/$3" && cd "$1/$2/$3" && cf gen
+}
+generate(){
+    i=1
+    c="a"
+    lim=$(($1))
+
+    while (( $i <= $lim )) do
+        echo $c
+
+        mkdir $c
+        cd $c
+        cf gen
+        cd ..
+
+        c="$(echo $c | tr '[a-y]z' '[b-z]a')"
+        i=$(($i + 1))
+    done
+}
+
+# ecnerwala's script for downloading tests through competitive companion (https://gist.github.com/ecnerwala)
+alias dld1="py3 ~/codeforces/download_prob.py contest -n1"
+alias dld6="py3 ~/codeforces/download_prob.py contest -n6"

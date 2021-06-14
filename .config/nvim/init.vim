@@ -17,6 +17,10 @@ Plug 'tpope/vim-surround'
 
 Plug 'neoclide/coc-eslint'
 
+" the community version is supposedly newer and better
+" Plug 'morhetz/gruvbox'
+Plug 'gruvbox-community/gruvbox'
+
 " Plug 'scrooloose/nerdtree'
 " i couldn't get neoformat to work on cpp (doesn't make any change)
 " Plug 'sbdchd/neoformat'

@@ -60,11 +60,11 @@ ghcl() {
 
 # clipboard interaction enhancement
 # copy a.cpp will place a.cpp in your clipboard
+# echo x | cbcp places x in your clipboard
+alias cbcp='xclip -selection clipboard'
 copy() {
     cat $1 | cbcp
 }
-# echo x | cbcp places x in your clipboard
-alias cbcp='xclip -selection clipboard'
 
 # part of growing up :)
 alias vim="nvim"

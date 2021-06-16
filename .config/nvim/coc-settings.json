@@ -2,7 +2,7 @@
     "diagnostic.checkCurrentLine": true,
     "coc.preferences.formatOnSaveFiletypes": ["dart" , "rust", "javascript", "c", "cpp", "python", "haskell"],
     "python.formatting.provider": "black",
-    "python.linting.pylintEnalbed": true,
+    "python.linting.pylintEnabled": true,
     "python.linting.pylintArgs": ["--extension-pkg-whitelist=numpy,cv2", "--disable=C0103,C0330", "--init-hook"],
     "languageserver": {
       "haskell": {
@@ -15,6 +15,7 @@
           "command": "erlang_ls",
           "filetypes": ["erlang"]
       }
-    }
+    },
+    "clangd.arguments": ["--clang-tidy"]
 }
 

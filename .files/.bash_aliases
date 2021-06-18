@@ -54,7 +54,7 @@ export WBGETENTITIES="https://www.wikidata.org/w/api.php?format=json&action=wbge
 
 # clone github repo in ssh mode using https url
 ghcl() {
-    prefix=$(echo -n $1 | sed 's|https://github.com/|git@github.com:|')
+    prefix=$(echo -n $1 | sed 's|https://github.com/|git@github.com:|' | sed 's|/$||')
     git clone "$prefix.git"
 }
 

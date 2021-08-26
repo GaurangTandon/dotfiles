@@ -1,5 +1,5 @@
 # critical metadata
-export ZSH="/home/gt/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="agnoster"
 export LANG=en_US.UTF-8
 export EDITOR="nvim"
@@ -15,7 +15,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # common aliases
-source ~/.bash_aliases
+source "$HOME/.bash_aliases"
 
 # see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
@@ -25,7 +25,7 @@ HISTFILESIZE=2000
 # do not accidentally overwrite existing files
 set -o noclobber
 
-source /home/gt/.nvimloaderrc
+source $HOME/.nvimloaderrc
 
 # adapted from https://github.com/mokagio/dotfiles/blob/ea34a74ba820f9617f70d5d33769f5979d49a3f3/zshprompt
 function check_last_exit_code() {
@@ -39,23 +39,23 @@ function check_last_exit_code() {
 PROMPT='$(check_last_exit_code)%F'$PROMPT
 
 # self binary files
-export PATH=$PATH:/home/gt/drivers:$HOME/bin
+export PATH=$PATH:$HOME/drivers:$HOME/bin
 
 # python related binary path
-export PATH=$PATH:/home/gt/.local/bin
+export PATH=$PATH:$HOME/.local/bin
 export PATH="$HOME/.poetry/bin:$PATH"
 
 # android stuff
-export ANDROID_SDK_ROOT=/home/gt/android-studio/bin
+export ANDROID_SDK_ROOT=$HOME/android-studio/bin
 export PATH=$PATH:$ANDROID_SDK_ROOT
 
 # other tools (do add the download path for each)
 export PATH=$PATH:/usr/local/texlive/2020/bin/x86_64-linux
-export PATH=$PATH:/home/gt/bin/erlang_ls_repo/_build/default/bin
-export PATH=$PATH:/home/gt/bin/cmake-3.20.0-rc2-linux-x86_64/bin
-export PATH=$PATH:/home/gt/bin/clangd_12.0.0/bin # https://github.com/clangd/clangd/releases
+export PATH=$PATH:$HOME/bin/erlang_ls_repo/_build/default/bin
+export PATH=$PATH:$HOME/bin/cmake-3.20.0-rc2-linux-x86_64/bin
+export PATH=$PATH:$HOME/bin/clangd_12.0.0/bin # https://github.com/clangd/clangd/releases
 
-export DENO_INSTALL="/home/gt/.deno"
+export DENO_INSTALL="$HOME/.deno"
 export PATH="$PATH:$DENO_INSTALL/bin"
 
 # latex
@@ -66,5 +66,4 @@ export INFOPATH=$MANPATH:/usr/local/texlive/2020/texmf-dist/doc/info
 add-zsh-hook -Uz chpwd (){ [ -f .env ] && source .env; [ -d venv ] && source venv/bin/activate }
 
 # fzf completion setup
-source /usr/share/doc/fzf/examples/key-bindings.zsh
-source /usr/share/doc/fzf/examples/completion.zsh
+[ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh

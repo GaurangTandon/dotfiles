@@ -6,10 +6,10 @@ cfr() {
     cf race $1 && cd $1/a
 }
 cfp(){
-    cd ~/codeforces && cf parse $1 $2 && cd "$1/$2" 
+    cd ~/cp/codeforces && cf parse $1 $2 && cd "$1/$2" 
 }
 cfg(){
-    cd ~/codeforces && mkdir -p "$1/$2" && cd "$1/$2" && cf gen  
+    cd ~/cp/codeforces && mkdir -p "$1/$2" && cd "$1/$2" && cf gen  
 }
 
 # Online judge tools related aliases

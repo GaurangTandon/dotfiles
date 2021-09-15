@@ -33,6 +33,7 @@
       1. for flutter goto [linux flutter](https://flutter.dev/docs/get-started/install/linux). It should install dart as well alongside
   12. `sudo apt install ffmpeg vlc vlc-plugin-access-extra libbluray-bdj libdvdcss2` (configure at default settings) (snap for vlc does not work on focal faussa)
   13. grab `bat` debian file from its [releases page](https://github.com/sharkdp/bat/releases) and run `sudo dpkg -i <path>.deb`.
+  13. grab `fd` from releases [`fd-v8.2.1-x86_64-unknown-linux-gnu.tar.gz`](https://github.com/sharkdp/fd/releases). move it inside `~/bin` with the dir name `fd-bin`. This is because it is sourced in the zshrc with this dirname and then used in fzf as the search command (this is because fd respects gitignore whereas the default find command does not, see [link](https://github.com/junegunn/fzf#respecting-gitignore))
   14. Emacs via compiling source (did not work on Ubuntu 20.04, tried 23.4, 25.3 and 26.3)
     - Enable build-dep in your apt list. Basically, `sudo sed -i -e 's/# deb-src/deb-src/' /etc/apt/sources.list` followed by `sudo apt update`
     - then do `sudo apt-get build-dep emacs`

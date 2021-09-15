@@ -40,6 +40,7 @@ PROMPT='$(check_last_exit_code)%F'$PROMPT
 
 # self binary files
 export PATH=$PATH:$HOME/drivers:$HOME/bin
+export PATH=$PATH:$HOME/bin/fd-bin
 
 # python related binary path
 export PATH=$PATH:$HOME/.local/bin
@@ -67,3 +68,6 @@ add-zsh-hook -Uz chpwd (){ [ -f .env ] && source .env; [ -d venv ] && source ven
 
 # fzf completion setup
 [ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
+
+export FZF_DEFAULT_COMMAND="fd --type f"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"

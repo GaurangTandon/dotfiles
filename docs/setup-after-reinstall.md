@@ -7,7 +7,7 @@
       - try follow this "https://github.com/ycm-core/YouCompleteMe/wiki/Building-Vim-from-source" but it didn't really work for me well. Also see: https://stackoverflow.com/questions/11416069, https://superuser.com/questions/623040
       - lastly run `sudo make && sudo make install`
   3. Install [Neovim latest release](https://github.com/neovim/neovim/releases/latest) via appimage
-  4. `python3 -m pip install --user --upgrade pynvim neovim-remote` ([remote](https://github.com/mhinz/neovim-remote) - useful for latex setup)
+  4. `python3 -m pip install --user --upgrade pynvim neovim-remote` ([remote](https://github.com/mhinz/neovim-remote) - useful for latex setup) (may need `sudo apt install python3-pip`) 
   5. Zsh:
       - `apt install zsh`
       - `sudo usermod -s /usr/bin/zsh $(whoami)`
@@ -47,6 +47,12 @@
     - one fix is `sudo apt install libnss3-dev`
     - another is to reinstall Zotero
     - the third is just to reopen Zotero, sometimes just opening and closing works
+
+-----
+
+## Gnome extensions
+
+1. [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)
 
 ------
 

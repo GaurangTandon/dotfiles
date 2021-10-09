@@ -24,7 +24,7 @@
   10. Get latest release of [pandoc](https://github.com/jgm/pandoc/releases/latest) and [tex](https://www.tug.org/texlive/acquire-netinstall.html) (warning: latter takes roughly 1.5hrs on fast internet)
   11. `python3 -m pip install pipx` and then `pipx install virtualenv` ([docs](https://virtualenv.pypa.io/en/stable/installation.html)) and download relevant modules (`torch`, `torchtext`, `tensorflow`, etc.)
   12. To download private repos, will need to setup ssh keys on github, and while at that, also setup gpg keys:
-      1. `gnupg` is already present in Focal repository at version 2.2.19. However, if you build from source you get 2.2.21. I don't think that's a significant upgrade, but keep that in mind. (To build from srouce, go [here](https://www.gnupg.org/download/) and download gnupg utils and all its depenency tarballs. Verify download integrity against sha1's listed [here](https://www.gnupg.org/download/integrity_check.html), unzip and install)
+      1. `gnupg` is already present in Focal repository at version 2.2.19. However, if you build from source you get 2.2.32. I don't think that's a significant upgrade, but keep that in mind. (To build from srouce, go [here](https://www.gnupg.org/download/) and download gnupg utils and all its depenency tarballs. Verify download integrity against sha1's listed [here](https://www.gnupg.org/download/integrity_check.html), unzip and install)
       2. Goto [security/keys](https://github.com/settings/keys) to add the ssh ang gpg keys.
       3. Run `ssh-keygen -t rsa -b 4096 -C "gaurang.tandon@students.iiit.ac.in"` to generate the ssh key and add a strong passphrase. Upload the public file to github. Then run `eval "$(ssh-agent -s)"` and `ssh-add ~/.ssh/<file-name>` to add the public key to your local ssh agent. ([full tutorial](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent))
       4. Run `gpg --full-generate-key`. Let default for RSA/DSA, but in key size enter 4096. Rest go ahead and enter a secure passphrase. Your key should be ready. Note your key id by running `gpg --list-keys`. Export it in ascii armor format using `gpg --armor --export <KEY>`. Copy it into the github page and you should be done. ([tutorial](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key)) (to revoke a bad key [follow this](https://superuser.com/questions/1526283/how-to-revoke-a-gpg-key-and-upload-in-gpg-server))
@@ -55,6 +55,12 @@
 ## Gnome extensions
 
 1. [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)
+
+------
+
+## Firefox
+
+1. Set `privacy.resistFingerprint` to true in about:config
 
 ------
 

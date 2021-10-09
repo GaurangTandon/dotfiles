@@ -54,6 +54,9 @@
 
 ## Gnome extensions
 
+
+Also listed on README though
+
 1. [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)
 
 ------

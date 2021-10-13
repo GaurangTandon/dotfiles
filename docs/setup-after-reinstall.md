@@ -5,6 +5,7 @@
   3. Install [Neovim latest release](https://github.com/neovim/neovim/releases/latest) via appimage
       - install [vim plug](https://github.com/junegunn/vim-plug)
       - launch neovim and run :PlugInstall (this also installs the colorscheme)
+      - grab fzf executable from [releases page](https://github.com/junegunn/fzf/releases) and put in `~/bin`
   5. `python3 -m pip install --user --upgrade pynvim neovim-remote` ([remote](https://github.com/mhinz/neovim-remote) - useful for latex setup) (may need `sudo apt install python3-pip`) 
   6. `sudo apt install gnome-tweaks` - to adjust caps lock as escape key
   7. Zsh:

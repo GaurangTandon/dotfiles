@@ -30,21 +30,22 @@
       5. Run `git config --global user.signingkey <KEY>` to add the signing information to commits. I have not added the gpg key to bash, although you can do that (`export GPG_TTY=$(tty)` to .bash_profile, I don't know what this does though)
       6. To sign every commit on the pc, run `git config --global commit.gpgsign true`. To sign just one commit, add the `-S` flag to `git commit`.
       7. That's all!
-  14. Setup Java: `sudo apt install openjdk-8-jdk` - this should install required stuff, check with `java -version` and `javac -version` (respectively) ([tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04) gives `default-jre default-jdk` which is actually correct but fails with this [error](https://stackoverflow.com/questions/55436585/), there is another [possible fix](https://stackoverflow.com/questions/47150410/failed-to-run-sdkmanager-list-with-java-9) but i don't care)
+  14. Download cmake binaries from [its download page](https://cmake.org/download/). Move it to `~/bin/cmake-download` (renaming the directory)
+  16. Setup Java: `sudo apt install openjdk-8-jdk` - this should install required stuff, check with `java -version` and `javac -version` (respectively) ([tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04) gives `default-jre default-jdk` which is actually correct but fails with this [error](https://stackoverflow.com/questions/55436585/), there is another [possible fix](https://stackoverflow.com/questions/47150410/failed-to-run-sdkmanager-list-with-java-9) but i don't care)
       1. for flutter goto [linux flutter](https://flutter.dev/docs/get-started/install/linux). It should install dart as well alongside
-  15. `sudo apt install ffmpeg vlc vlc-plugin-access-extra libbluray-bdj libdvdcss2` (configure at default settings) (snap for vlc does not work on focal faussa)
-  16. grab `bat` debian file from its [releases page](https://github.com/sharkdp/bat/releases) and run `sudo dpkg -i <path>.deb`.
-  17. grab `fd` from releases [`fd-v8.2.1-x86_64-unknown-linux-gnu.tar.gz`](https://github.com/sharkdp/fd/releases). move it inside `~/bin` with the dir name `fd-bin`. This is because it is sourced in the zshrc with this dirname and then used in fzf as the search command (this is because fd respects gitignore whereas the default find command does not, see [link](https://github.com/junegunn/fzf#respecting-gitignore))
-  18. Emacs via compiling source (did not work on Ubuntu 20.04, tried 23.4, 25.3 and 26.3)
+  17. `sudo apt install ffmpeg vlc vlc-plugin-access-extra libbluray-bdj libdvdcss2` (configure at default settings) (snap for vlc does not work on focal faussa)
+  18. grab `bat` debian file from its [releases page](https://github.com/sharkdp/bat/releases) and run `sudo dpkg -i <path>.deb`.
+  19. grab `fd` from releases [`fd-v8.2.1-x86_64-unknown-linux-gnu.tar.gz`](https://github.com/sharkdp/fd/releases). move it inside `~/bin` with the dir name `fd-bin`. This is because it is sourced in the zshrc with this dirname and then used in fzf as the search command (this is because fd respects gitignore whereas the default find command does not, see [link](https://github.com/junegunn/fzf#respecting-gitignore))
+  20. Emacs via compiling source (did not work on Ubuntu 20.04, tried 23.4, 25.3 and 26.3)
     - Enable build-dep in your apt list. Basically, `sudo sed -i -e 's/# deb-src/deb-src/' /etc/apt/sources.list` followed by `sudo apt update`
     - then do `sudo apt-get build-dep emacs`
     - `emacs` instructions from its [page](https://www.gnu.org/software/emacs/download.html), basically clone the tarball and run `sudo ./configure && sudo make && sudo make install`
-  19. Emacs via `apt`itude - fix for a strange bug from [here](https://askubuntu.com/questions/1237698/emacs-installation-fails-on-ubuntu-20-04) (apt does have emacs 26.3, woo)
+  21. Emacs via `apt`itude - fix for a strange bug from [here](https://askubuntu.com/questions/1237698/emacs-installation-fails-on-ubuntu-20-04) (apt does have emacs 26.3, woo)
     - `sudo apt purge emacs`
     - `sudo apt install --reinstall libotf0 libm17n-0`
     - `sudo apt install emacs`
     - To install all plugins, M-x and then `package-refresh-contents` followed by `package-install-selected-packages` should do the trick. If any remains, can do manually `M-x` then `package-install<CR>linum-relative` or `package-install<CR>spacemacs-theme`
-  20. Zotero bug: "Failed to load backend for 'application/pdf': libnss3.so: failed to map segment from shared object""
+  22. Zotero bug: "Failed to load backend for 'application/pdf': libnss3.so: failed to map segment from shared object""
     - one fix is `sudo apt install libnss3-dev`
     - another is to reinstall Zotero
     - the third is just to reopen Zotero, sometimes just opening and closing works

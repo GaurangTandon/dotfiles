@@ -6,6 +6,7 @@
       - install [vim plug](https://github.com/junegunn/vim-plug)
       - launch neovim and run :PlugInstall (this also installs the colorscheme)
       - grab fzf executable from [releases page](https://github.com/junegunn/fzf/releases) and put in `~/bin`
+      - install clangd (`sudo apt-get install clangd-12`) latest version at the time of writing is [v12](https://clangd.llvm.org/installation) and make a simple symlink (`ln -s /bin/clangd-12 /home/gt/clangd`)
   5. `python3 -m pip install --user --upgrade pynvim neovim-remote` ([remote](https://github.com/mhinz/neovim-remote) - useful for latex setup) (may need `sudo apt install python3-pip`) 
   6. `sudo apt install gnome-tweaks` - to adjust caps lock as escape key
   7. Zsh:

@@ -53,6 +53,14 @@
 
 -----
 
+for compiling c++ projects, you'll need to
+
+1. generate a `compile_commands.json` file, use [`compiledb`](https://github.com/nickdiego/compiledb) for that ([`bear`](https://github.com/rizsotto/bear) for apt has an oudated version which is probably why it doesn't work)
+2. add a `.clang-format` file to your project when working in a team
+3. enjoy!
+
+----
+
 ## Gnome extensions
 
 
